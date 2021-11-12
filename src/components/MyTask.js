@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import TaskInput from './TaskInput'
 import {CgCloseO} from 'react-icons/cg'
 import {BiEdit} from 'react-icons/bi'
+import {AiOutlineFileDone} from 'react-icons/ai'
 const MyTask = ({tasks, completeTask, removeTask, updateTask}) => {
     const [edit, setEdit] = useState({
         id : '',
@@ -23,10 +24,15 @@ const MyTask = ({tasks, completeTask, removeTask, updateTask}) => {
             className = "task"
             key = {index}
         >
+            <div>
+                <AiOutlineFileDone 
+                    className = "doneIcon"
+                    onClick = {() => completeTask(task.id)}
+                />
+            </div>            
             <div
                 className = {task.isComplete ? "taskComplete" : "textTask"}
                 key = {task.id}
-                onClick = {() => completeTask(task.id)}
             >
                 {task.text}
             </div>

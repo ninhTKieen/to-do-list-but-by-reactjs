@@ -28,8 +28,21 @@ body {
   background: transparent;
   color: #fff;
 }
+.task_input_edit {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #c9bebd;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+  margin-top: 10px;
+}
 .task_button {
   padding : 14px 14px 14px 14px
+}
+.task_button_edit { 
+  padding : 14px 7px 14px 7px
 }
 .task {
   background-color: #45302f;
@@ -50,11 +63,19 @@ body {
   flex : 0.9
 }
 .taskComplete {
-  text-decoration-line: line-through;
+  display: flex;
   font-size: 20px;
+  text-align: justify;
+  flex-direction: column;
+  flex : 0.9;
+  text-decoration-line: line-through;
   color : green;
 }
-
+.doneIcon {
+  margin-left: 10px;
+  font-size: 24px;
+  color : green
+}
 .removeIcon {
   margin-right: 10px;
   font-size: 24px;

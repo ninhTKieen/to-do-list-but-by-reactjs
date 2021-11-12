@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from "react";
 
 const TaskInput = (props) => {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState(props.edit ? props.edit.id : '');
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -42,11 +42,11 @@ const TaskInput = (props) => {
                 placeholder = "Update your item"
                 value = {input}
                 name = 'text'
-                className = "task_input"
+                className = "task_input_edit"
                 onChange = {handleChange}
                 ref = {inputRef}
             />
-            <button className = "task_button" onClick = {handleAddTask}>Update task</button>
+            <button className = "task_button_edit" onClick = {handleAddTask}>Update task</button>
           </> )
         }
         
