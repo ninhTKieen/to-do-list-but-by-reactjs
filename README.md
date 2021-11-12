@@ -1,3 +1,7 @@
+# Introduction
+Nothing special here. Just a stupid app for beginner to learn and practice ReactJS.
+Fuck ReactJS. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
