@@ -1,38 +1,66 @@
+body {
+  background-color: firebrick;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #291d1d;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  flex : 1;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color : #c9bebd
+}
+.task_input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #c9bebd;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+.task_button {
+  padding : 14px 14px 14px 14px
+}
+.task {
+  background-color: #45302f;
+  padding: 5px;
+  margin : 20px;
+  border-radius: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  flex-direction: row;
+  flex : 1;
+  justify-content: space-between;
+}
+.textTask {
+  display: flex;
+  font-size: 20px;
+  text-align: justify;
+  flex-direction: column;
+  flex : 0.9
+}
+.taskComplete {
+  text-decoration-line: line-through;
+  font-size: 20px;
+  color : green;
 }
 
-.App-link {
-  color: #61dafb;
+.removeIcon {
+  margin-right: 10px;
+  font-size: 24px;
+  color : #f50a3595;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editIcon {
+  color : dodgerblue;
+  font-size : 24px
 }
