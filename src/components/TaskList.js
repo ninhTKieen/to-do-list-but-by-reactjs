@@ -40,9 +40,13 @@ const TaskList = () => {
         let updateTasks = taskItems.map(item => (item.id === id ? newTask : item));
         setTaskItems(updateTasks);
     }
+    const removeAll = () => {
+        setTaskItems([]);
+    }
     return (
         <div>
-            <h1 className = "title">Today't Tasks</h1>
+            <h1 className = "title">Today's Tasks</h1>
+            <h1 className = "title" onClick = {removeAll}>Remove All</h1>
             <TaskInput onChange = {handleAddTask}/>
             <MyTask 
                 tasks = {taskItems} 
